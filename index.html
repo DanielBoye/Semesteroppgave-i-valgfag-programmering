@@ -1,0 +1,280 @@
+<html>    
+    <body>
+    <div>
+    <h1>Caesar cipher</h1>
+    <p>Caesar cipher (or Caesar code) is a shift cipher, one of the most easy and most famous encryption systems. In a shift cipher the values of the letters are shifted by some set amount. More infos about the Caeser cipher you can find on its <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Wikipedia Page</a>.</p>
+    <textarea id="text"  placeholder="Type text here!" tabindex="1"></textarea>
+    <br>
+    <label>Shift:</label>
+    <input type="number" id="rot" min="1" max="25" value="0">
+    <br>
+    <button onclick="rot()">ENCRYPT</button>
+    <h2>The encrypted text:</h2>
+    <p id="result"></p>
+    </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body {
+    text-align: center;
+  font-family: sans-serif, serif;
+    box-sizing: border-box;
+    width: 100%;
+max-width: 30em;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: black;
+}
+a {
+    color: #b30000;
+}
+a:hover {
+    color: #ff0000;
+}
+
+p {
+    text-align: justify;
+    padding: 5px 30px 15px 30px;
+}
+div {
+    width: 100%;
+box-sizing: border-box;
+    height: 500px;
+    border-radius: 4%;
+    background-color: white;
+}
+#text {
+    box-sizing: border-box;
+    width: 65%;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+label {
+    font-weight: bold;
+}
+#rot {
+    box-sizing: border-box;
+    width: 35%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#result {
+    text-align: center;
+    padding-bottom: 30px;
+}
+button {
+    background-color: #b30000;
+    font-weight: bold;
+    color: #fff;
+    height: 26px;
+}
+button:hover {
+    background-color: #ff0000;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:800,400);
+
+body {
+	margin: 0;
+	top: 0;
+	background: #B2EBF2;
+}
+
+h3 {
+	color: #fff;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+p {
+	color: #00BCD4;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.button {
+	position: relative;
+	height: 60px;
+	width: 200px;
+	background: #00BCD4;
+	border-radius: 8px;
+	text-align: center;
+	margin: 200px auto 0 auto;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.submit,
+.arrow {
+	display: inline-block;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.submit {
+	text-transform: uppercase;
+	margin: 14px 0 0 26px;
+}
+
+.arrow {
+	position: relative;
+	top: -3px;
+	opacity: 0;
+}
+
+.line {
+	height: 3px;
+	width: 20px;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.top {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.bottom {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	margin-top: 10px;
+}
+
+.instructions {
+	text-align: center;
+	margin: 20px auto;
+}
+
+.button:active {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.button.hover .submit {
+	-webkit-transform: translateX(-90px);
+	-moz-transform: translateX(-90px);
+	transform: translateX(-90px);
+	opacity: 0;	
+}
+
+.button.hover .arrow {
+	-webkit-transform: translateX(-70px);
+	-moz-transform: translateX(-70px);
+	transform: translateX(-70px);
+	opacity: 1;
+}
+
+.button.active .arrow {
+	opacity: 1;
+	-webkit-transform: rotate(90deg) translateY(70px);
+	-moz-transform: rotate(90deg) translateY(70px);
+	transform: rotate(90deg) translateY(70px);
+}
+
+.button.active {
+	background: #4CAF50;
+}
+
+.button.active .submit {
+	opacity: 0;
+}
+
+.button.active .top {
+	width: 34px;
+}
+
+.button.active .bottom {
+	margin: 14px 0 0 12px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function rot() {
+    var rotCharArray = [];
+    var regEx = /[A-Z]/ ;
+    var str = document.getElementById("text").value.toUpperCase().split("");
+    var result = document.getElementById("result");
+    var rot = Number(document.getElementById("rot").value);
+          if(str.length <1) {
+              result.innerHTML = "Type something in!";
+          }
+          else if(rot < 1 || rot > 25) {
+               result.innerHTML = "Shift has to be a number between 1 and 25!"
+           }
+           else {
+           
+    for (var x in str) {
+      if (regEx.test(str[x])) {
+        rotCharArray.push((str[x].charCodeAt() - 65 + rot) % 26 + 65);
+      } else {
+        rotCharArray.push(str[x].charCodeAt());
+      }
+    }
+           
+    str = String.fromCharCode.apply(String, rotCharArray);
+      result.innerHTML = str;
+//document.getElementById("text").value = "";
+           }
+  }	
+</script>

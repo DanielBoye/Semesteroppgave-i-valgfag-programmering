@@ -1,106 +1,60 @@
 <body>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <div class="original">
-
-    <h1>Caesar cipher</h1>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere distinctio illo placeat, explicabo, molestias dicta nesciunt in at vero corrupti aut fuga sit nisi dignissimos quo reiciendis. Ab, perspiciatis.</a>.</p>
-    
-    <textarea id="text"  placeholder="Skriv tekst her!" tabindex="12"></textarea>
-    
-    <br>
-    
-    <label>Skift:</label>
-    
-    <input type="number" id="rot" min="1" max="25" value="13">
-    
-    <br>
-    
-    <button onclick="rot()">ENCRYPT</button>
-    
-    <h3>Resultat:</h3>
-    
-    <p id="result"></p>
-    
-    
-
+    <div class="cæsarchiffer">
+    <h1>Cæsarchiffer</h1>
+      <p class="p-padding">
+        Innen kryptografi er cæsarchiffer, også kjent som Caesars chiffer, skiftchiffer, Cæsars kode og cæsarskift, en av de enkleste og mest kjente krypteringsteknikker. Det er en type substitusjonschiffer der hver bokstav i klarteksten erstattes med en annen bokstav et gitt antall steg lenger ut i alfabetet. <a href="https://no.wikipedia.org/wiki/C%C3%A6sarchiffer" target="_blank">Wikipedia</a>.
+      </p>
+      <textarea id="text" placeholder="Skriv tekst her!" tabindex="12"></textarea>
+      <br>
+      <label>Skift:</label>
+      <input type="number" id="rot" min="1" max="25" value="blank">
+      <br>
+      <button onclick="rot()" class="rgb">ENCRYPT</button>
+      <h3>Resultat:</h3>
+      <p id="result"></p>
     </div>
-
     <div>
-        <div class="css-1gu6us7 eywmkyo5">
-            <div class="css-1btnrpi eywmkyo4"
-                ><div class="css-fk0xjj eywmkyo3">
-                    <div class="css-1yjx7km eywmkyo2">
-                        <h2 class="css-11lxucl eywmkyo1">Om koderen</h2>
-                        <p class="css-br12e7 eywmkyo0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt deleniti officiis doloribus, maiores iste, expedita tempore sed ratione neque incidunt ipsa eaque fugiat necessitatibus quidem laborum nam, quis iure..
+        <div class="hovedboks">
+            <div class="hovedboks-padding">
+                 <div class="enkelboks">
+                    <div class="enkelboks-padding">
+                        <h2 class="h2-overskrift">Om koderen</h2>
+                        <p class="p-padding">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt deleniti officiis doloribus, maiores iste, expedita tempore sed ratione neque incidunt ipsa eaque fugiat necessitatibus quidem laborum nam, quis iure.. <a href="https://www.linkedin.com/in/danielboye/" target="_blank">LinkedIn</a>.
         
                         </p>
                     </div>
                 </div>
-                <div class="css-fk0xjj eywmkyo3">
-                    <div class="css-1yjx7km eywmkyo2">
-                        <h2 class="css-11lxucl eywmkyo1">Kryptering </h2>
-                        <p class="css-br12e7 eywmkyo0">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus odio, recusandae neque ex placeat totam iste obcaecati? Fuga, obcaecati odio. Aperiam vel numquam ipsam velit a ex sit libero esse?
-                        </p>
-                    </div>
-                </div>
-                <div class="css-fk0xjj eywmkyo3">
-                    <div class="css-1yjx7km eywmkyo2">
-                        <h2 class="css-11lxucl eywmkyo1">Oppgaven</h2>
-                        <p class="css-br12e7 eywmkyo0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, veritatis? Sunt esse, deleniti molestiae quos, omnis minus ipsum harum voluptatem, repudiandae voluptatibus quisquam! Sequi ut rem modi incidunt aperiam. Reiciendis!
+                <div class="enkelboks">
+                    <div class="enkelboks-padding">
+                        <h2 class="h2-overskrift">Kryptering </h2>
+                        <p class="p-padding">
+                          Innen kryptografi er cæsarchiffer, også kjent som Caesars chiffer, skiftchiffer, Cæsars kode og cæsarskift, en av de enkleste og mest kjente krypteringsteknikker. Det er en type substitusjonschiffer der hver bokstav i klarteksten erstattes med en annen bokstav et gitt antall steg lenger ut i alfabetet. <a href="https://ndla.no/nb/subject:1:9bb7b427-3f5b-4c45-9719-efc509f3d9cc/topic:1:de369d43-7380-460d-b80e-93f7f5631e36/resource:d26d52da-e727-40d7-b925-4dd622880ab9" target="_blank">Lær mer om kryptering</a>.
         
                         </p>
                     </div>
                 </div>
-                <div class="css-fk0xjj eywmkyo3">
-                    <div class="css-1yjx7km eywmkyo2">
-                        <h2 class="css-11lxucl eywmkyo1">A response</h2>
-                        <p class="css-br12e7 eywmkyo0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam eum dolores. Explicabo velit doloribus numquam sit harum sed quasi, iusto repellendus, ab deleniti minima maiores eum! Excepturi, et unde.
+                <div class="enkelboks">
+                    <div class="enkelboks-padding">
+                        <h2 class="h2-overskrift">Hjelp og kilder</h2>
+                        <p class="p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, veritatis? Sunt esse, deleniti molestiae quos, omnis minus ipsum harum voluptatem, repudiandae voluptatibus quisquam! Sequi ut rem modi incidunt aperiam. Reiciendis!
         
-                        </p>
-                    </div>
-                </div>
-                <div class="css-fk0xjj eywmkyo3">
-                    <div class="css-1yjx7km eywmkyo2">
-                        <h2 class="css-11lxucl eywmkyo1">No middleman</h2>
-                        <p class="css-br12e7 eywmkyo0">"The Kryptokrona isnt dependent on our central banks or servers, thus less fragile than todays financial systems."
-        
-                        </p>
-                    </div>
-                </div>
-                <div class="css-fk0xjj eywmkyo3">
-                    <div class="css-1yjx7km eywmkyo2">
-                        <h2 class="css-11lxucl eywmkyo1">Private</h2>
-                        <p class="css-br12e7 eywmkyo0">
-                            "The basics of Kryptokrona allow users to stay anonymous by default, to send value and data without being revealed or traced."
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 </body>
-
-
-
-
-
-
-
-
-
-
 <style>
-
+a {
+  color: #ffffff;
+}
 h1 {
     color: #ffffff;
 }
-.h2 {
+h2 {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -124,32 +78,30 @@ body {
   max-width: 30em;
   margin: 0 auto;
   margin-top: 20px;
-  background-color: #dfce9f;
+  background-color: #1d1d1d;
 }
-a {
-  color: #b30000;
+html {
+    background-color: #1d1d1d;
 }
-a:hover {
-  color: #ff0000;
-}
-
 p {
-  text-align: justify;
+  text-align: center;
   padding: 5px 30px 15px 30px;
   font-family: 'Roboto Mono',monospace;
-  
+  color: rgba(255,255,255,0.5);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; 
 }
-.original {
-    
+.cæsarchiffer {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(255,255,255,0.5);
-  height: 500px;
+  height: 550px;
   background-color: #1d1d1d;
   border-radius: 8%;
   padding: 0 40px;
-  
-  
 }
 #text {
   box-sizing: border-box;
@@ -164,7 +116,6 @@ label {
   font-weight: bold;
   color: #ffffff;
   font-family: 'Roboto Mono',monospace;
-  
 }
 #rot {
   box-sizing: border-box;
@@ -173,7 +124,7 @@ label {
   border: 1px solid rgba(255,255,255,0.5);
   margin-bottom: 10px;
 }
-#result {
+#resultat {
   text-align: center;
   padding-bottom: 30px;
 }
@@ -182,47 +133,39 @@ button {
   background-color: rgba(255,255,255,0.5);
   padding: 10px 15px;
   font-weight: 600;
-
   transition: 250ms;
-
   text-decoration: none;
   color: #1d1d1d;
   border: 1px solid;
   font-family: 'Roboto Mono',monospace;
-
 }
 button:hover {
   background-color: #fff;;
   font-family: 'Roboto Mono',monospace;
 }
-html {
+.hovedboks {
     background-color: #1d1d1d;
-    background-color: #1d1d1d;
-}
-.css-1gu6us7 {
-    background-color: #1d1d1d;
-    display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 50px;
-}
-
-.css-1btnrpi {
-    box-sizing: border-box;
-    padding: 0 40px;
-    width: 100%;
-    max-width: 1400px;
+   
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;  
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
-    transition: all 250ms;
+    gap: 20px;
+    transition: .25s ease-in-out all;
 }
-
-.css-fk0xjj {
+.hovedboks-padding {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: .25s ease-in-out all;
+}
+.enkelboks {
     display: flex;
     flex-direction: row;
     -webkit-box-pack: justify;
@@ -233,65 +176,55 @@ html {
     transition: all 250ms;
     border: 1px solid rgba(255,255,255,0.5);
 }
-.css-1yjx7km {
+.enkelboks-padding {
     padding: 20px;
 }
-.css-11lxucl {
+.h2-overskrift {
     margin: 0;
     font-weight: 200;
     color: #ffffff;
 }
-
-
-.css-br12e7 {
+.p-padding {
     font-family: 'Roboto Mono',monospace;
     color: rgba(255,255,255,0.5);
     font-weight: 400;
     margin-bottom: 20px;
+    text-align: start;
 }
-p {
-    color: rgba(255,255,255,0.5);
-    word-break: break-word;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+@keyframes rgb {
+  0%, 100% {
+    background: #5f86f2;
+  }
+  12.5% {
+    background: #a65ff2;
+  }
+  25% {
+    background: #f25fd0;
+  }
+  37.5% {
+    background: #f25f61;
+  }
+  50% {
+    background: #f2cb5f;
+  }
+  62.5% {
+    background: #abf25f;
+  }
+  75% {
+    background: #5ff281;
+  }
+  87.5% {
+    background: #5ff2f0;
+  }
+}
+.rgb {
+  background: #5f86f2;
+  -webkit-animation: rgb 15s ease infinite;
+  -moz-animation: rgb 15s ease infinite;
+  animation: rgb 15s ease infinite;
+  transition: 300ms ease-in-out;
 }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
     function rot() {
   var rotCharArray = [];
@@ -314,8 +247,6 @@ p {
 
     str = String.fromCharCode.apply(String, rotCharArray);
     result.innerHTML = str;
-    //document.getElementById("text").value = "";
   }
 }
-
 </script>

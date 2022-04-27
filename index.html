@@ -259,9 +259,9 @@ button:hover {
   var result = document.getElementById("result");
   var rot = Number(document.getElementById("rot").value);
   if (str.length < 1) {
-    result.innerHTML = "Type something in!";
+    result.innerHTML = "Skriv noe inn!";
   } else if (rot < 1 || rot > 25) {
-    result.innerHTML = "Shift has to be a number between 1 and 25!";
+    result.innerHTML = "Skift må være et tall mellom 1 og 25!";
   } else {
     for (var x in str) {
       if (regEx.test(str[x])) {

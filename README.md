@@ -16,7 +16,6 @@ Vel, kryptografi er kult og utvikling av nettsider er kult. Det var da jeg fikk 
       <p class="p-padding">
         Innen kryptografi er cæsarchiffer, også kjent som Caesars chiffer, skiftchiffer, Cæsars kode og cæsarskift, en av de enkleste og mest kjente krypteringsteknikker. Det er en type substitusjonschiffer der hver bokstav i klarteksten erstattes med en annen bokstav et gitt antall steg lenger ut i alfabetet. <a href="https://no.wikipedia.org/wiki/C%C3%A6sarchiffer" target="_blank">Wikipedia</a>.
       </p>
-    </div>
 ```
 Vi starter først å lage en cæsarchiffer classe for å endre på utseende senere i css. Jeg har lagt inn en h1 for å skrive inn overskriften. Under den kommer paragrafen som "p" der jeg skrev inn litt infromasjon om hva en cæsarchiffer er. På enden av denne paragrafen legger jeg inn en hyperlink til ordet Wikipedia siden det var der jeg fant informasjonen
 

@@ -7,3 +7,21 @@ Vel, kryptografi er kult og utvikling av nettsider er kult. Det var da jeg fikk 
 ## Forklarning av koden
 
 _jeg bare viser det som er viktig, ikke det som er åpenlyst_
+
+```Html
+<div class="cæsarchiffer">
+    <h1>Cæsarchiffer</h1>
+      <p class="p-padding">
+        Innen kryptografi er cæsarchiffer, også kjent som Caesars chiffer, skiftchiffer, Cæsars kode og cæsarskift, en av de enkleste og mest kjente krypteringsteknikker. Det er en type substitusjonschiffer der hver bokstav i klarteksten erstattes med en annen bokstav et gitt antall steg lenger ut i alfabetet. <a href="https://no.wikipedia.org/wiki/C%C3%A6sarchiffer" target="_blank">Wikipedia</a>.
+      </p>
+      <textarea id="text" placeholder="Skriv tekst her!" tabindex="12"></textarea>
+      <br>
+      <label>Skift:</label>
+      <input type="number" id="rot" min="1" max="25" value="blank">
+      <br>
+      <button onclick="rot()" class="rgb">ENCRYPT</button>
+      <h3>Resultat:</h3>
+      <p id="result"></p>
+    </div>
+```
+Som du ser her

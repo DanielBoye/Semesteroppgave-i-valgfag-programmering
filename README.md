@@ -1,3 +1,7 @@
 # Semesteroppgave-i-valgfag-programmering
-***
-I kryptografi er et Caesar-chiffer en av de enkleste og mest kjente krypteringsteknikkene. Metoden er oppkalt etter Julius Caesar som pleide å sende hemmelige meldinger til sine generaler i felten. I tilfelle en av meldingene hans ble avlyttet, kunne ikke motstanderen lese dem. Dette ga ham helt klart en betydelig strategisk fordel.
+
+## Hvorfor valgte jeg å lage dette?
+
+Vel, kryptografi er kult og utvikling av nettsider er kult. Det var da jeg fikk tanken om å bare lage en nettside der en bruker kunne putte inn tekst, og få det kryptert med en cæsarchiffer. Til alle kryptografere som leser dette, jeg vet at cæsarchiffer teoretisk sett, ikke kan kalles for kryptering fordi den gir deg lik null sikkerhet. Dermed, ikke legg inn meldinger og kryper de her for å sende til andre, i sammenheng til kriminalitet og tro at ingen vet hva du sier.
+
+## Forklarning av koden

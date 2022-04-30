@@ -155,5 +155,6 @@ Til slutt må vi printe ut svaret vi fikk til nettsiden. Dette gjøres med å he
 str = String.fromCharCode.apply(String, rotCharArray);
     result.innerHTML = str;
 ```
+---
 
-
+Jeg kommer senere til å legge ut nettsiden på et domene, som du slipper å ha filen lokalt på pc-en. Følg meg på [LinkedIn](https://www.linkedin.com/in/danielboye/) for oppdateringer rundt nettsiden. 

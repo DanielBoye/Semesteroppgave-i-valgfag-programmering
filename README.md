@@ -45,3 +45,38 @@ Så kommer selve resultatet. Denne bare printer ut "result" som blir sendt ifra 
 Med alt dette (+ litt css) ser boksen slik ut. 
 
 [![image](https://www.linkpicture.com/q/Skjermbilde-2022-04-30-200201.png)](https://www.linkpicture.com/view.php?img=LPic626d79a8ad128316846195)
+
+## Om koderen
+
+Jeg viser bare den første her. Alt det samme gjelder for de andre boksene utenom h2 overskriften, og selve teksten inne i paragrafen.
+
+Alle boksene er satt i samme div, det er derfor det kan se ut som det er en eksta bare på starten. Tilbake til koden. Alle boksene er koblet opp til flere klasser for å klare å effektivt endre utseende og padding på alle sammen, istedenfor å gå inn å redigere på hver enkelte. Overskriften er h2 for å gi litt volum til teksten. Paragrafen får klassen "p-padding" for å kunne redigere paddingen enkelt på alle paragrafene. Linkene henviser til hvor jeg jobber, hva fag dette her er, og LinkedIn profilen min. To <br> etter et avsnitt passet bra, for å gi de litt rom for å puste.   
+
+```Html
+<div>
+        <div class="hovedboks">
+            <div class="hovedboks-padding">
+                 <div class="enkelboks">
+                    <div class="enkelboks-padding">
+                        <h2 class="h2-overskrift">Om koderen</h2>
+                        <p class="p-padding">
+                            Daniel Boye er en elev ifra 10-klasse som liker å tenke fremover. Han engasjerer seg alt for mye i blokkjedeteknologi og utvinning av kryptovaluta. Han er ekstremt engasjert i sikkerhet og personvern, og leser seg opp på nye smarte løsninger til full personvern rundt penger.
+                            <br>
+                            <br>
+                            Daniel jobber i <a href="https://www.konciv.com/" target="_blank">Konicv</a> og driver med cybersikkerhet og softwareutvikling på fritiden. 
+                            <br>
+                            <br>
+                            Et av hans første prosjekt er nemlig denne nettsiden som er en semesteroppgave i valgfaget <a href="https://www.udir.no/lk20/prg01-02/kompetansemaal-og-vurdering/kv304" target="_blank">programmering</a> på ungdomsskolen. 
+                            <br>
+                            <br>
+                            Daniel Boye finner du på<a href="https://www.linkedin.com/in/danielboye/" target="_blank">LinkedIn</a>.
+                        </p>
+                    </div>
+                </div>
+```
+
+Denne boksen som vist over er bare for "Om koderen" men det samme gjelder for alle de andre boksene, bare paragrafen og overskriften er endret. 
+
+Med alt dette sammen (+ litt css) ser boksene slik ut.
+
+[![image](https://www.linkpicture.com/q/Skjermbilde-2022-04-30-205526.png)](https://www.linkpicture.com/view.php?img=LPic626d8632266e2917369912)
